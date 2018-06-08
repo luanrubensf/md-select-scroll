@@ -1,6 +1,6 @@
 {
   "name": "md-select-scroll",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Select directive async load, based on md-select",
   "scripts": {
     "build": "rimraf dist && webpack --bail --progress --profile"
