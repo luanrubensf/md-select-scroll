@@ -1,0 +1,18 @@
+<md-select placeholder="UF" ng-model="vm.ngModel"
+           md-on-open="vm.onOpenSelect()"
+           md-on-close="vm.onClose()"
+           ng-model-options="{trackBy: '$value.id'}"
+           md-container-class="select-search"
+           md-selected-text="vm.mdSelectedText()"
+           required="vm.required">
+    <md-select-header ng-show="!vm.hideSearch" class="select-search-header">
+        <input ng-model="vm.searchText"
+               type="search"
+               autocomplete="off"
+               ng-change="vm.onSeach()"
+               placeholder="Digite sua busca..."
+               class="select-header-searchbox md-text">
+    </md-select-header>
+    <md-option ng-value="localData" ng-repeat="localData in vm.data.content">{{vm.formatOption(localData)}}</md-option>
+    <md-progress-linear ng-if="vm.loading" md-mode="indeterminate"></md-progress-linear>
+</md-select>
