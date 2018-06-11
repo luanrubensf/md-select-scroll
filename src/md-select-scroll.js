@@ -12,6 +12,7 @@ export default class hfSelectEstadoDirective {
         this.scope = {
             ngModel: '=',
             required: '=',
+            ngDisabled: '=?',
             list: '=',
             itensPerPage: '=?',
             formatSelected: '=?',

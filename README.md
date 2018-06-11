@@ -62,6 +62,7 @@ function list(params) {
 * hideSearch: define if the search input should be hide or not
 * label: define the label of the component
 * ngChange: function invoked when the model changes
+* ngDisabled: defines if the select should be disabled or not
 
 **OBS:** This component uses md-select, from [angular-material](https://material.angularjs.org/latest/), so it's mandatory to have angular-material in your application.
 

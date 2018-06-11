@@ -4,6 +4,7 @@
            ng-model-options="{trackBy: '$value.id'}"
            md-container-class="select-search"
            md-selected-text="vm.mdSelectedText()"
+           ng-disabled="vm.ngDisabled"
            required="vm.required">
     <md-select-header ng-show="!vm.hideSearch" class="select-search-header">
         <input ng-model="vm.searchText"
